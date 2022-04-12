@@ -28,7 +28,7 @@ class Application:
         self.window = QMainWindow()
         self.window.setGeometry(200,200,500,500)
         self.window.setWindowTitle("Youtube - Video Downloader")
-        self.window.setWindowIcon(PyQt5.QtGui.QIcon("Icon.png"))
+        self.window.setWindowIcon(PyQt5.QtGui.QIcon("C:/Users/Surface/Python_project/Pillow_module/Icon.png"))
         self.window.setFixedSize(500,500)
         self.window.show()
         self.UI_setup()
@@ -129,10 +129,7 @@ class Application:
         #self.download_status.adjustSize()
         #self.download_status.update()
         if self.download_format == '.mp4' or self.download_format == '.mov' :
-            try :
-                video_downloader.download_video(self.Input_url.text(),self.output_path,self.download_format)
-            except:
-                print("Error during Download")
+            video_downloader.download_video(self.Input_url.text(),self.output_path,self.download_format)
         else :
             try:
                 video_downloader.download_audio(self.Input_url.text(),self.output_path,self.download_format)
