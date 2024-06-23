@@ -1,0 +1,9 @@
+# Default ignored files
+/shelf/
+/workspace.xml
+/assets
+/tests
+/video_tests
+/.idea
+/_pycache_
+/venv

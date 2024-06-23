@@ -6,7 +6,6 @@ import sys
 import app_stylesheet
 import video_downloader
 import re
-
 explanation_text = """
 - You can use this application to download videos from Youtube
 - You can download entire playlists and videos with their url :
@@ -28,7 +27,7 @@ class Application:
         self.window = QMainWindow()
         self.window.setGeometry(200,200,500,500)
         self.window.setWindowTitle("Youtube - Video Downloader")
-        self.window.setWindowIcon(PyQt5.QtGui.QIcon("C:/Users/Surface/Python_project/Pillow_module/Icon.png"))
+        self.window.setWindowIcon(PyQt5.QtGui.QIcon("D:/Python_project/YoutubeVideoDownloader/Icon.png"))
         self.window.setFixedSize(500,500)
         self.window.show()
         self.UI_setup()
